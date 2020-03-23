@@ -1,9 +1,9 @@
 <template>
   <div>
-    <div class="home-content">
-      home
+    <div class="about-content">
+      about
     </div>
-  </div>
+  </div> 
 </template>
 
 <script>
@@ -13,7 +13,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.home-content{
+.about-content{
   width: 1240px;
   margin: 0 auto;
 }
