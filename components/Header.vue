@@ -11,6 +11,14 @@
         <el-menu-item index="home">{{$t('header.home')}}</el-menu-item>
         <el-menu-item index="about">{{$t('header.about')}}</el-menu-item>
       </el-menu>
+      <div class="right">
+        <button v-for="locale in availableLocales"
+          :key="locale.code"
+          @click="switchCode(locale)"
+        >
+          {{ locale.code }}
+        </button>
+      </div>
     </div>
     
   </div>
@@ -26,6 +34,15 @@ export default {
     handleSelect(key, keypath){
       this.activeIndex = key
       this.$router.push({name: key==='home'?'index':key})
+    },
+    switchCode(locale){
+      this.$i18n.locale = locale
+      this.$i18n.setLocaleCookie(locale)
+    }
+  },
+  computed:{
+    availableLocales () {
+      return this.$i18n.locales.filter(i => i.code !== this.$i18n.locale)
     }
   }
 }
@@ -38,6 +55,8 @@ export default {
 .header-content{
   width: 1240px;
   margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
 }
 .el-menu.el-menu--horizontal{
   border-bottom: 0;

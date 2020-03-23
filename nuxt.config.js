@@ -48,9 +48,14 @@ module.exports = {
           { code: 'zh', iso: 'zh-CN', file: 'zh-CN.yml' },
         ],
         defaultLocale: 'zh',
-        strategy: 'no_prefix',
         lazy: true,
-        langDir: './i18n/'
+        langDir: 'i18n/',
+        strategy: 'no_prefix',
+        detectBrowserLanguage: {
+          fallbackLocale: 'zh',
+          useCookie: true,
+          alwaysRedirect: true,
+        },
       }
     ],
   ],
