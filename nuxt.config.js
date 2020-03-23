@@ -40,6 +40,19 @@ module.exports = {
   ** Nuxt.js modules
   */
   modules: [
+    [
+      'nuxt-i18n',
+      {
+        locales: [
+          { code: 'en', iso: 'en-US', file: 'en-US.yml' },
+          { code: 'zh', iso: 'zh-CN', file: 'zh-CN.yml' },
+        ],
+        defaultLocale: 'zh',
+        strategy: 'no_prefix',
+        lazy: true,
+        langDir: './i18n/'
+      }
+    ],
   ],
   /*
   ** Build configuration
@@ -50,6 +63,10 @@ module.exports = {
     ** You can extend webpack config here
     */
     extend (config, ctx) {
+      config.module.rules.push({
+        test: /\.ya?ml?$/,
+        loader: ['json-loader', 'yaml-loader', ]
+      })
     }
   }
 }

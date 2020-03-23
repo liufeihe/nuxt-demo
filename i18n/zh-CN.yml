@@ -1,0 +1,5 @@
+app:
+  name: nuxt演示
+header:
+  home: 首页
+  about: 关于
