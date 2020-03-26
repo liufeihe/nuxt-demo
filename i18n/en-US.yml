@@ -2,4 +2,5 @@ app:
   name: nuxt demo
 header:
   home: home
+  forum: forum
   about: about

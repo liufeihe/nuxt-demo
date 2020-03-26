@@ -9,6 +9,7 @@
         @select="handleSelect"
         active-text-color="#e84746">
         <el-menu-item index="home">{{$t('header.home')}}</el-menu-item>
+        <el-menu-item index="forum">{{$t('header.forum')}}</el-menu-item>
         <el-menu-item index="about">{{$t('header.about')}}</el-menu-item>
       </el-menu>
       <div class="right">

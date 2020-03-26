@@ -1,7 +1,9 @@
 <template>
   <div>
     <Header />
-    <nuxt class="page-content"/>
+    <div class="page-wrapper">
+      <nuxt class="page-content"/>
+    </div>
   </div>
 </template>
 <script>
@@ -33,9 +35,13 @@ html {
   margin: 0;
 }
 
-.page-content{
+.page-wrapper{
   min-height: calc(100vh - 64px);
   background-color: #e5e5e5;
+}
+.page-content{
+  width: 1240px;
+  margin: 0 auto;
 }
 
 </style>

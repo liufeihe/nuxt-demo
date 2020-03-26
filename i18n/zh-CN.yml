@@ -2,4 +2,5 @@ app:
   name: nuxt演示
 header:
   home: 首页
+  forum: 论坛
   about: 关于
