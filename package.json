@@ -15,7 +15,8 @@
     "element-ui": "^2.4.11",
     "koa": "^2.6.2",
     "nuxt": "^2.0.0",
-    "nuxt-i18n": "^6.6.1"
+    "nuxt-i18n": "^6.6.1",
+    "vue-quill-editor": "^3.0.6"
   },
   "devDependencies": {
     "json-loader": "^0.5.7",
