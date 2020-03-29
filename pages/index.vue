@@ -1,7 +1,11 @@
 <template>
   <div>
     <div class="home-content">
-      home
+      <div>home</div>
+      
+      <img src="@/assets/svg/icon_bili.svg" />
+      <img src="@/assets/svg/icon_comment.svg" />
+      <img src="@/assets/svg/icon_douyin.svg" />
     </div>
   </div>
 </template>
