@@ -9,6 +9,7 @@
       @ready="onEditorReady($event)"
       @change="changeContent"
     />
+    <div class="editor-content" v-html="content"></div>
   </section>
 </template>
 
@@ -70,13 +71,17 @@
 
 <style lang="scss" scoped>
   .container {
-    width: 60%;
+    width: 80%;
     margin: 0 auto;
     padding: 50px 0;
     .quill-editor {
       min-height: 200px;
       max-height: 400px;
       overflow-y: auto;
+    }
+    .editor-content{
+      border: 1px dashed #e5e5e5;
+      min-height: 100px;
     }
   }
 </style>
