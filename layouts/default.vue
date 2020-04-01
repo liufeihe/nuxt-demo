@@ -38,10 +38,14 @@ html {
 .page-wrapper{
   min-height: calc(100vh - 64px);
   background-color: #e5e5e5;
+  padding: 20px 0;
 }
 .page-content{
   width: 1240px;
   margin: 0 auto;
+  background-color: white;
+  padding: 20px;
+  border-radius: 4px;
 }
 
 </style>

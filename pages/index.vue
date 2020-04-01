@@ -2,10 +2,10 @@
   <div>
     <div class="home-content">
       <div>home</div>
-      
-      <img src="@/assets/svg/icon_bili.svg" />
-      <img src="@/assets/svg/icon_comment.svg" />
-      <img src="@/assets/svg/icon_douyin.svg" />
+      <div class="icon-list">
+        icon list: 
+        <img :src="getIconUrl(item)" v-for="(item,idx) in iconList" :key="idx" />
+      </div>
     </div>
   </div>
 </template>
@@ -13,6 +13,16 @@
 <script>
 
 export default {
+  data(){
+    return {
+      iconList: ['bili','comment','douyin'],
+    }
+  },
+  methods: {
+    getIconUrl(item){
+      return require(`@/assets/svg/icon_${item}.svg`)
+    }
+  }
 }
 </script>
 
