@@ -30,6 +30,7 @@
         menubar: 'file edit view insert format tools table help',
         toolbar: 'undo redo | bold italic underline strikethrough | fontselect fontsizeselect formatselect | alignleft aligncenter alignright alignjustify | outdent indent |  numlist bullist | forecolor backcolor removeformat | pagebreak | charmap emoticons | fullscreen  preview save print | insertfile image media template link anchor codesample | ltr rtl',
         toolbar_sticky: true,
+        codesample_global_prismjs: true,
         autosave_ask_before_unload: true,
         autosave_interval: "30s",
         autosave_prefix: "{path}{query}-{id}-",
@@ -74,7 +75,6 @@
         ],
         template_cdate_format: '[Date Created (CDATE): %m/%d/%Y : %H:%M:%S]',
         template_mdate_format: '[Date Modified (MDATE): %m/%d/%Y : %H:%M:%S]',
-        height: 600,
         image_caption: true,
         quickbars_selection_toolbar: 'bold italic | quicklink h2 h3 blockquote quickimage quicktable',
         noneditable_noneditable_class: "mceNonEditable",
@@ -82,6 +82,17 @@
         contextmenu: "link image imagetools table",
 
       }
+     }
+   },
+   beforeMount(){
+     let content = sessionStorage.getItem('tinymce_content')
+     if (content) {
+       this.content = content
+     }
+   },
+   beforeDestroy(){
+     if (this.content) {
+       sessionStorage.setItem('tinymce_content', this.content)
      }
    }
  }

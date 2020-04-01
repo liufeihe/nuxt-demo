@@ -37,6 +37,7 @@ module.exports = {
   plugins: [
     '@/plugins/element-ui',
     {src:'@/plugins/quill-editor',ssr:false},
+    {src:'@/plugins/prism',ssr:false},
   ],
   /*
   ** Nuxt.js dev-modules
