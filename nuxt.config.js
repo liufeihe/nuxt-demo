@@ -28,7 +28,8 @@ module.exports = {
     // for snow theme
     'quill/dist/quill.snow.css',
     // for bubble theme
-    'quill/dist/quill.bubble.css'
+    'quill/dist/quill.bubble.css',
+    // '@/static/tinymce/tinymce.min.css',
   ],
   /*
   ** Plugins to load before mounting the App
