@@ -7,6 +7,7 @@
       @blur="onEditorBlur($event)"
       @focus="onEditorFocus($event)"
       @ready="onEditorReady($event)"
+      @change="changeContent"
     />
   </section>
 </template>
@@ -51,6 +52,9 @@
       }, 3000)
     },
     methods: {
+      changeContent(){
+        this.$emit('changeContent', this.content)
+      },
       onEditorBlur(editor) {
         console.log('editor blur!', editor)
       },

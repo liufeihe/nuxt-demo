@@ -1,6 +1,11 @@
 app:
   name: nuxt演示
+button:
+  create-post: 发帖
 header:
   home: 首页
   forum: 论坛
   about: 关于
+forum:
+  content: 帖子内容
+  editor: 帖子编辑
