@@ -8371,6 +8371,11 @@ vue-loader@^15.9.0:
     vue-hot-reload-api "^2.3.0"
     vue-style-loader "^4.1.0"
 
+vue-m-message@^3.0.0:
+  version "3.0.0"
+  resolved "https://registry.npm.taobao.org/vue-m-message/download/vue-m-message-3.0.0.tgz#0fddc4759128bcf3b48a89710e5e236681f6c690"
+  integrity sha1-D93EdZEovPO0iolxDl4jZoH2xpA=
+
 vue-meta@^2.3.3:
   version "2.3.3"
   resolved "https://registry.npm.taobao.org/vue-meta/download/vue-meta-2.3.3.tgz#2a097f62817204b0da78be4d62aee0cb566eaee0"

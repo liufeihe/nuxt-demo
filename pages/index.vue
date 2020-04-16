@@ -6,6 +6,7 @@
         icon list: 
         <img :src="getIconUrl(item)" v-for="(item,idx) in iconList" :key="idx" />
       </div>
+      <el-button @click="handleClick">ShowMessage</el-button>
     </div>
   </div>
 </template>
@@ -21,6 +22,9 @@ export default {
   methods: {
     getIconUrl(item){
       return require(`@/assets/svg/icon_${item}.svg`)
+    },
+    handleClick(){
+      this.$message.info('hahhah')
     }
   }
 }
