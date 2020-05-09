@@ -36,6 +36,7 @@ module.exports = {
   */
   plugins: [
     '@/plugins/element-ui',
+    '@/plugins/svgicon',
     {src:'@/plugins/quill-editor',ssr:false},
     {src:'@/plugins/prism',ssr:false},
     {src:'@/plugins/message',ssr:false},

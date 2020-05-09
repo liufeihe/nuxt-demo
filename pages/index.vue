@@ -4,6 +4,10 @@
       <div>home</div>
       <div class="icon-list">
         icon list: 
+        <!-- <category />
+        <bili /> -->
+        <svgicon icon="category" width="20" color="red"></svgicon>
+        <svgicon icon="close" width="20" color="black"></svgicon>
         <img :src="getIconUrl(item)" v-for="(item,idx) in iconList" :key="idx" />
       </div>
       <el-button @click="handleClick">ShowMessage</el-button>
@@ -12,6 +16,9 @@
 </template>
 
 <script>
+// import category from '@/assets/svg/category.svg'
+// import bili from '@/assets/svg/icon_bili.svg'
+// import '@/components/icons/category'
 
 export default {
   data(){
